@@ -4,22 +4,22 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CurrentWeather {
-    private Collection<Weather> weathers = new ArrayList<>();
+    private List<Weather> weathers = new ArrayList<>();
     private Main main;
     private Wind wind;
     private int id;
     private String name;
 
-    public Collection<Weather> getWeathers() {
+    public List<Weather> getWeathers() {
         return weathers;
     }
 
     @JsonProperty("weather")
-    public void setWeathers(Collection<Weather> weathers) {
+    public void setWeathers(List<Weather> weathers) {
         this.weathers = weathers;
     }
 

@@ -1,7 +1,8 @@
 package de.mbis.demo.weather.service.integration.provider;
 
+import de.mbis.demo.weather.service.exceptions.CityNotFoundException;
 import de.mbis.demo.weather.service.model.CurrentWeather;
-import de.mbis.demo.weather.service.provider.OpenWeatherProvider;
+import de.mbis.demo.weather.service.unit.provider.OpenWeatherProvider;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ public class OpenWeatherProviderIntegrationTest {
     private OpenWeatherProvider provider;
 
     @Test
-    public void receive_a_valid_current_weather_result() {
+    public void receive_a_valid_current_weather_result() throws CityNotFoundException {
         CurrentWeather result = provider.getCurrentWeatherByCityName("Oelde");
         assertNotNull(result);
     }
