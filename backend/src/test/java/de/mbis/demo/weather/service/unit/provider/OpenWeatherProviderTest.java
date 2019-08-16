@@ -2,23 +2,23 @@ package de.mbis.demo.weather.service.unit.provider;
 
 import de.mbis.demo.weather.service.exceptions.CityNotFoundException;
 import de.mbis.demo.weather.service.model.CurrentWeather;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.client.RestClientTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.client.MockRestServiceServer;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withStatus;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 @RestClientTest(OpenWeatherProvider.class)
 public class OpenWeatherProviderTest {
 
@@ -34,10 +34,8 @@ public class OpenWeatherProviderTest {
     @Autowired
     private MockRestServiceServer server;
 
-    @Rule
-    public ExpectedException thrown= ExpectedException.none();
-
     @Test
+    @DisplayName("it should deserialize weather information from provider")
     public void deserialize_weather_information_from_provider() throws CityNotFoundException {
         server.expect(
                 requestTo("http://api.openweathermap.org/data/2.5/weather?q=Oelde&APPID=c94345fc6cf1a078f4047180bfb7e34a&units=metric"))
@@ -63,15 +61,13 @@ public class OpenWeatherProviderTest {
     }
 
     @Test
+    @DisplayName("it should throw an exception on wrong city name")
     public void throws_exception_on_city_name_not_found() throws CityNotFoundException {
         server.expect(
                 requestTo("http://api.openweathermap.org/data/2.5/weather?q=NotFound&APPID=c94345fc6cf1a078f4047180bfb7e34a&units=metric"))
                 .andRespond(withStatus(HttpStatus.NOT_FOUND));
 
-        thrown.expect(CityNotFoundException.class);
-        thrown.expectMessage("city \"NotFound\" not found");
-
-        provider.getCurrentWeatherByCityName("NotFound");
+        assertThrows(CityNotFoundException.class, () -> provider.getCurrentWeatherByCityName("NotFound"));
     }
 
 }
