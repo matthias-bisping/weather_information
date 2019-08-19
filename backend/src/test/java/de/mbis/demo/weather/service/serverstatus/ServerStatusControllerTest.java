@@ -23,7 +23,7 @@ public class ServerStatusControllerTest {
 
     @BeforeEach
     public void init() {
-        RestAssured.baseURI = String.format("http://localhost:%d/weather", serverPort);
+        RestAssured.baseURI = String.format("http://localhost:%d/weather/rest/", serverPort);
     }
 
     @Test
