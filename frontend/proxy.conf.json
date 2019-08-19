@@ -1,8 +1,11 @@
 {
-  "/api/*": {
-    "target": "http://localhost:8080",
+  "/rest/*": {
+    "target": "http://localhost:8090/weather/rest",
     "secure": false,
     "logLevel": "debug",
-    "changeOrigin": true
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/rest": ""
+    }
   }
 }
