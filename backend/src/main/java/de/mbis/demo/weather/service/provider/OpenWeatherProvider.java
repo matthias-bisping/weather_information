@@ -1,4 +1,4 @@
-package de.mbis.demo.weather.service.unit.provider;
+package de.mbis.demo.weather.service.provider;
 
 import de.mbis.demo.weather.service.exceptions.CityNotFoundException;
 import de.mbis.demo.weather.service.model.CurrentWeather;
