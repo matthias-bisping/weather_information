@@ -1,8 +1,9 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpParams} from "@angular/common/http";
 import {Observable, throwError} from "rxjs";
 import {ServerStatus} from "./server-status";
 import {catchError, map, retry} from "rxjs/operators";
+import {CurrentWeather} from "./current-weather";
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +19,18 @@ export class RestApiService {
         retry(1),
         catchError(RestApiService.handleError),
         map(result => new ServerStatus(result))
+      )
+  }
+
+  getCurrentWeather(city : string) : Observable<CurrentWeather> {
+    let params = new HttpParams().set("city", city);
+
+    return this.http
+      .get<CurrentWeather>("rest/currentWeather", {params: params })
+      .pipe(
+        retry(1),
+        catchError(RestApiService.handleError),
+        map(result => new CurrentWeather(result))
       )
   }
 

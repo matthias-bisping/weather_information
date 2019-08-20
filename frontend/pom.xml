@@ -35,7 +35,7 @@
               </goals>
               <phase>generate-resources</phase>
               <configuration>
-                <arguments>run build</arguments>
+                <arguments>run build-maven</arguments>
               </configuration>
             </execution>
             <execution>
@@ -44,7 +44,7 @@
                 <goal>npm</goal>
               </goals>
               <configuration>
-                <arguments>run-script build</arguments>
+                <arguments>run-script build-maven</arguments>
               </configuration>
               <phase>generate-resources</phase>
             </execution>

@@ -1,0 +1,29 @@
+<mat-card class="box">
+  <mat-card-title>Manual Weather Update</mat-card-title>
+
+  <form [formGroup]="manualUpdate" (ngSubmit)="submitManualUpdate()">
+    <mat-card-content>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Cityname" formControlName="city" />
+      </mat-form-field>
+
+      <div *ngIf="currentWeather != null">
+        <p>Id {{currentWeather.id}}</p>
+        <p>Name {{currentWeather.name}}</p>
+        <p>Main {{currentWeather.main}}</p>
+        <p>Description {{currentWeather.description}}</p>
+        <p>Temperature {{currentWeather.temperature}}</p>
+        <p>Pressure {{currentWeather.pressure}}</p>
+        <p>Humidity {{currentWeather.humidity}}</p>
+        <p>Wind speed {{currentWeather.windSpeed}}</p>
+        <p>Wind degree {{currentWeather.windDegree}}</p>
+        <img src="{{currentWeather.iconUrl}}" />
+      </div>
+    </mat-card-content>
+
+    <mat-card-footer>
+      <button [disabled]="!manualUpdate.valid" mat-flat-button color="primary">Update</button>
+    </mat-card-footer>
+  </form>
+
+</mat-card>
