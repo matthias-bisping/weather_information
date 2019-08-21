@@ -1,17 +1,14 @@
-<app-server-status></app-server-status>
-<app-manual></app-manual>
-<mat-card>
-  <mat-card-title>Current Weather Information</mat-card-title>
-  <form class="example-form">
-    <mat-form-field>
-      <input matInput placeholder="City" value="Berlin">
-    </mat-form-field>
+<mat-tab-group color="primary">
+  <mat-tab label="Server Status">
+    <app-server-status></app-server-status>
+  </mat-tab>
+  <mat-tab label="Manual Update">
+    <app-manual></app-manual>
+  </mat-tab>
+  <mat-tab label="Automatic Update">
 
-    <mat-form-field>
-      <input matInput placeholder="Update Intervall" value="60">
-    </mat-form-field>
+  </mat-tab>
+</mat-tab-group>
 
-    <button mat-button color="primary">Submit</button>
-    <button mat-button color="warn">Cancel</button>
-  </form>
-</mat-card>
+
+
