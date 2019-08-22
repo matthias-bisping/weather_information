@@ -1,0 +1,33 @@
+<div>
+  <form [formGroup]="automaticUpdate">
+    <mat-form-field>
+      <input matInput placeholder="Cityname" formControlName="city" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Interval" formControlName="interval" type="number" />
+    </mat-form-field>
+    <button [disabled]="!automaticUpdate.valid || updateInProgress" mat-button color="accent" (click)="submitAutomaticUpdate()">Start</button>
+    <button [disabled]="!updateInProgress" mat-button color="warn" (click)="stopUpdate()">Stop</button>
+  </form>
+</div>
+
+<div *ngIf="currentWeather != null" class="weatherWidget">
+  <p>{{currentWeather.messageId}}</p>
+  <p>{{currentWeather.messageTimeStamp}}</p>
+  <mat-card class="currentWeatherCard">
+    <mat-card-header>
+      <img mat-card-avatar src="{{currentWeather.iconUrl}}" />
+      <mat-card-title>{{currentWeather.name}}</mat-card-title>
+      <mat-card-subtitle>{{currentWeather.id}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Temperature {{currentWeather.temperature}} °C</p>
+      <p>Main {{currentWeather.main}}</p>
+      <p>Pressure {{currentWeather.pressure}} hPa</p>
+      <p>Humidity {{currentWeather.humidity}} %</p>
+      <p>Description {{currentWeather.description}}</p>
+      <p>Wind speed {{currentWeather.windSpeed}} km/h</p>
+      <p>Wind degree {{currentWeather.windDegree}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

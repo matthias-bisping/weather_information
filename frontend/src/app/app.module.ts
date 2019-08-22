@@ -11,13 +11,15 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ManualComponent} from './manual/manual.component';
 import {AngularMaterialModule} from "./angular-material.module";
 import {MatTabsModule} from "@angular/material";
+import {AutomaticComponent} from './automatic/automatic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ServerStatusComponent,
-    ManualComponent
+    ManualComponent,
+    AutomaticComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,14 @@ import de.mbis.demo.weather.service.model.Main;
 import de.mbis.demo.weather.service.model.Weather;
 import de.mbis.demo.weather.service.model.Wind;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.UUID;
+
 public class CurrentWeatherDto {
+    private String messageId;
+    private String messageTimestamp;
+
     private int id;
     private String name;
     private String main;
@@ -16,6 +23,11 @@ public class CurrentWeatherDto {
     private float humidity;
     private float windSpeed;
     private int windDegree;
+
+    public CurrentWeatherDto() {
+        messageId = UUID.randomUUID().toString();
+        messageTimestamp = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
+    }
 
     public static CurrentWeatherDto toDto(CurrentWeather currentWeather, String iconUrlTemplate) {
         if(currentWeather == null) return null;
@@ -127,5 +139,13 @@ public class CurrentWeatherDto {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getMessageId() {
+        return messageId;
+    }
+
+    public String getMessageTimestamp() {
+        return messageTimestamp;
     }
 }

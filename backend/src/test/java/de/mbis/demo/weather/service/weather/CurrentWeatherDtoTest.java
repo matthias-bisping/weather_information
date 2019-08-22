@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsEqual.equalTo;
+import static org.hamcrest.core.IsNull.notNullValue;
 
 public class CurrentWeatherDtoTest {
     private CurrentWeatherBuilder defaultCurrentWeather = CurrentWeatherBuilder
@@ -26,6 +27,9 @@ public class CurrentWeatherDtoTest {
     @Test
     public void transform_a_complete_model_to_dto() {
         CurrentWeatherDto actual = CurrentWeatherDto.toDto(defaultCurrentWeather.build(), "http://test.de/%s");
+
+        assertThat(actual.getMessageId(), is(notNullValue()));
+        assertThat(actual.getMessageTimestamp(), is(notNullValue()));
 
         assertThat(actual.getId(), is(equalTo(2857943)));
         assertThat(actual.getName(), is(equalTo("Oelde")));
