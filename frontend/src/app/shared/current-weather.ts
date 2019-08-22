@@ -1,6 +1,6 @@
 export class CurrentWeather {
   messageId : string;
-  messageTimeStamp : string;
+  messageTimestamp : string;
   id : number;
   name : string;
   main : string;
