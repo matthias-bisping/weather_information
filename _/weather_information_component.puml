@@ -1,0 +1,72 @@
+@startuml
+skinparam componentStyle uml
+
+header
+bla
+end header
+
+footer
+Weather Information Components Diagram by Matthias Bisping
+end footer
+
+title Weather Information Components
+
+frame "Backend" {
+package "Controller" {
+    component ServerStatusController
+    component WeatherController
+    component WeaterUpdaterController
+}
+
+package "Updater" {
+    component WeatherUpdateRepository
+    [WeatherUpdaterJob]
+    component WeatherUpdaterService
+}
+
+package "Provider" {
+    component OpenWeatherProvider
+
+    note left of OpenWeatherProvider
+        Make call to openweathermap.org
+        and deserialize the result.
+    end note
+}
+
+WeatherController --> OpenWeatherProvider
+WeatherUpdateRepository --> WeaterUpdaterController
+WeatherUpdaterService ..> WeatherUpdaterJob : create new job
+WeatherUpdaterJob -> OpenWeatherProvider
+WeatherUpdaterJob -> WeatherUpdateRepository : Update
+
+Shell - WeatherUpdaterService : Update city and interval
+}
+
+REST . ServerStatusController
+REST . WeatherController
+WEBSOCKET . WeaterUpdaterController
+
+frame "Frontend" {
+    package "Service" {
+        [rest-api]
+        [websocket]
+    }
+    package "Componentes" {
+        [ServerStatusComponent]
+        [ManualComponent]
+        [AutomaticComponent]
+        [UpdateComponent]
+    }
+}
+
+[ServerStatusComponent] --> [rest-api]
+[ManualComponent] --> [rest-api]
+[AutomaticComponent] --> [rest-api]
+
+[UpdateComponent] --> [websocket] : subscribe
+[websocket] --> [UpdateComponent] : update
+
+[rest-api] . REST
+WEBSOCKET . [websocket]
+
+@enduml
