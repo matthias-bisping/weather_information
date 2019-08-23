@@ -4,16 +4,9 @@ import {ManualComponent} from './manual.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {AngularMaterialModule} from "../angular-material.module";
 import {CurrentWeatherViewComponent} from "../shared/current-weather-view/current-weather-view.component";
-import {Observable} from "rxjs";
-import {CurrentWeather} from "../shared/current-weather";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {RestApiService} from "../shared/rest-api.service";
-
-class MockRestApiService {
-  getCurrentWeather(city : string) : Observable<CurrentWeather> {
-    return null;
-  }
-}
+import {MockRestApiService} from "../shared/app.testdata";
 
 describe('ManualComponent', () => {
   let component: ManualComponent;
