@@ -42,6 +42,7 @@ export class RestApiService {
       errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
     }
     console.log(errorMessage);
+    alert(errorMessage);
     return throwError(errorMessage);
   }
 }
