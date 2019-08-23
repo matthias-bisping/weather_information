@@ -7,5 +7,11 @@
     "pathRewrite": {
       "^/rest": ""
     }
+  },
+  "/websocket/*": {
+    "target": "http://localhost:8090/weather",
+    "secure": false,
+    "ws": true,
+    "logLevel": "debug"
   }
 }

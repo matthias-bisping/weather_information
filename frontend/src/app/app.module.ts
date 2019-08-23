@@ -13,6 +13,7 @@ import {AngularMaterialModule} from "./angular-material.module";
 import {MatTabsModule} from "@angular/material";
 import {AutomaticComponent} from './automatic/automatic.component';
 import {CurrentWeatherViewComponent} from './shared/current-weather-view/current-weather-view.component';
+import {UpdaterComponent} from './updater/updater.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {CurrentWeatherViewComponent} from './shared/current-weather-view/current
     ServerStatusComponent,
     ManualComponent,
     AutomaticComponent,
-    CurrentWeatherViewComponent
+    CurrentWeatherViewComponent,
+    UpdaterComponent
   ],
   imports: [
     BrowserModule,

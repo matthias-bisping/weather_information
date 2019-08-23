@@ -11,6 +11,7 @@ import {CurrentWeatherViewComponent} from "../shared/current-weather-view/curren
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {RestApiService} from "../shared/rest-api.service";
 import {MockRestApiService} from "../shared/app.testdata";
+import {UpdaterComponent} from "../updater/updater.component";
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -18,7 +19,7 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeComponent, ServerStatusComponent, ManualComponent, AutomaticComponent, CurrentWeatherViewComponent ],
+      declarations: [ HomeComponent, ServerStatusComponent, ManualComponent, AutomaticComponent, CurrentWeatherViewComponent, UpdaterComponent ],
       imports: [AngularMaterialModule, MatTabsModule, ReactiveFormsModule, BrowserAnimationsModule],
       providers: [
         {provide: RestApiService, useClass: MockRestApiService}
