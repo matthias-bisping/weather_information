@@ -13,7 +13,7 @@ public class WeatherInformationApplicationTests {
 
     @Test
     @DisplayName("it should start the spring app with contexts")
-    public void contextLoads() {
+    void contextLoads() {
     }
 
 }

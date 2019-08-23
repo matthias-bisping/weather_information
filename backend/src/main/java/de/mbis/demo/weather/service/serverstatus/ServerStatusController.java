@@ -5,7 +5,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,9 +15,11 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("rest/")
 @Api(value = "Server Status")
 public class ServerStatusController {
+    private final HttpSession httpSession;
 
-    @Autowired
-    private HttpSession httpSession;
+    public ServerStatusController(HttpSession httpSession) {
+        this.httpSession = httpSession;
+    }
 
     @RequestMapping(value = "/status", method = RequestMethod.GET)
     @ApiOperation(value = "Return current server status and session id", response = ServerStatus.class)

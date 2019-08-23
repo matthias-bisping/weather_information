@@ -22,13 +22,13 @@ public class ServerStatusControllerTest {
     private int serverPort;
 
     @BeforeEach
-    public void init() {
+    void init() {
         RestAssured.baseURI = String.format("http://localhost:%d/weather/rest/", serverPort);
     }
 
     @Test
     @DisplayName("it should return a valid server status")
-    public void correct_server_status() {
+    void correct_server_status() {
         when()
                 .get("/status")
                 .then()

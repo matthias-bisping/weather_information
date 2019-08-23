@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
-public class OpenWeatherProviderIntegrationTest {
+class OpenWeatherProviderIntegrationTest {
 
     @Autowired
     private OpenWeatherProvider provider;
@@ -23,7 +23,7 @@ public class OpenWeatherProviderIntegrationTest {
     @Tag("manual")
     @Test
     @DisplayName("it should receive a valid current weather result")
-    public void receive_a_valid_current_weather_result() throws CityNotFoundException {
+    void receive_a_valid_current_weather_result() throws CityNotFoundException {
         CurrentWeather result = provider.getCurrentWeatherByCityName("Oelde");
         assertNotNull(result);
     }

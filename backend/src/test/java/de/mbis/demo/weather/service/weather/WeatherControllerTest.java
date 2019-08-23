@@ -35,7 +35,7 @@ public class WeatherControllerTest {
     private WeatherController controller;
 
     @BeforeEach
-    public void init() throws CityNotFoundException {
+    void init() throws CityNotFoundException {
         Mockito.when(provider.getCurrentWeatherByCityName("Oelde")).thenReturn(CurrentWeatherBuilder.create().build());
         Mockito.when(provider.getCurrentWeatherByCityName("wrong")).thenThrow(new CityNotFoundException("City not found"));
 
@@ -44,7 +44,7 @@ public class WeatherControllerTest {
 
     @DisplayName("it should receive a valid current weather by city")
     @Test
-    public void get_valid_current_weather_by_city() throws Exception {
+    void get_valid_current_weather_by_city() throws Exception {
         MockHttpServletResponse actual = mockMvc.perform(get("/rest/currentWeather?city=Oelde")).andReturn().getResponse();
 
         assertThat(actual.getStatus(), is(equalTo(HttpStatus.OK.value())));
@@ -55,7 +55,7 @@ public class WeatherControllerTest {
 
     @DisplayName("it should receive an error on a unknown city")
     @Test
-    public void get_error_on_unknown_city() throws Exception {
+    void get_error_on_unknown_city() throws Exception {
         MockHttpServletResponse actual = mockMvc.perform(get("/rest/currentWeather?city=wrong")).andReturn().getResponse();
 
         assertThat(actual.getStatus(), is(equalTo(HttpStatus.BAD_REQUEST.value())));

@@ -12,7 +12,7 @@ public class ServerStatus implements Serializable {
     @ApiModelProperty(notes = "Current session id", example = "958D62B92A2AA484B72BEB525296DCEE")
     private String session;
 
-    public ServerStatus(String status, String session) {
+    private ServerStatus(String status, String session) {
         this.status = status;
         this.session = session;
     }

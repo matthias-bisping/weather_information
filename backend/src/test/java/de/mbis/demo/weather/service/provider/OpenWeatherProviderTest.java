@@ -36,7 +36,7 @@ public class OpenWeatherProviderTest {
 
     @Test
     @DisplayName("it should deserialize weather information from provider")
-    public void deserialize_weather_information_from_provider() throws CityNotFoundException {
+    void deserialize_weather_information_from_provider() throws CityNotFoundException {
         server.expect(
                 requestTo("http://api.openweathermap.org/data/2.5/weather?q=Oelde&APPID=c94345fc6cf1a078f4047180bfb7e34a&units=metric"))
                 .andRespond(withSuccess(SUCCESS, MediaType.APPLICATION_JSON));
@@ -62,7 +62,7 @@ public class OpenWeatherProviderTest {
 
     @Test
     @DisplayName("it should throw an exception on wrong city name")
-    public void throws_exception_on_city_name_not_found() throws CityNotFoundException {
+    void throws_exception_on_city_name_not_found() throws CityNotFoundException {
         server.expect(
                 requestTo("http://api.openweathermap.org/data/2.5/weather?q=NotFound&APPID=c94345fc6cf1a078f4047180bfb7e34a&units=metric"))
                 .andRespond(withStatus(HttpStatus.NOT_FOUND));

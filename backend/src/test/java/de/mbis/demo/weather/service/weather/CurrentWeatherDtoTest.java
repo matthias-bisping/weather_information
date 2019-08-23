@@ -8,7 +8,7 @@ import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.core.IsNull.notNullValue;
 
-public class CurrentWeatherDtoTest {
+class CurrentWeatherDtoTest {
     private CurrentWeatherBuilder defaultCurrentWeather = CurrentWeatherBuilder
             .create()
             .withId(2857943)
@@ -25,7 +25,7 @@ public class CurrentWeatherDtoTest {
 
     @DisplayName("it should transform a complete model to a dto")
     @Test
-    public void transform_a_complete_model_to_dto() {
+    void transform_a_complete_model_to_dto() {
         CurrentWeatherDto actual = CurrentWeatherDto.toDto(defaultCurrentWeather.build(), "http://test.de/%s");
 
         assertThat(actual.getMessageId(), is(notNullValue()));
@@ -45,7 +45,7 @@ public class CurrentWeatherDtoTest {
 
     @DisplayName("it should transform a model without wind to a dto")
     @Test
-    public void transform_model_to_dto_without_wind() {
+    void transform_model_to_dto_without_wind() {
         CurrentWeatherDto actual = CurrentWeatherDto.toDto(
                 defaultCurrentWeather
                         .but()
@@ -61,7 +61,7 @@ public class CurrentWeatherDtoTest {
 
     @DisplayName("it should transform a model without main information to a dto")
     @Test
-    public void transform_model_to_dto_without_main() {
+    void transform_model_to_dto_without_main() {
         CurrentWeatherDto actual = CurrentWeatherDto.toDto(
                 defaultCurrentWeather
                         .but()
@@ -78,7 +78,7 @@ public class CurrentWeatherDtoTest {
 
     @DisplayName("it should transform a model without weather to a dto")
     @Test
-    public void transform_model_to_dto_without_weather() {
+    void transform_model_to_dto_without_weather() {
         CurrentWeatherDto actual = CurrentWeatherDto.toDto(
                 defaultCurrentWeather
                         .but()
