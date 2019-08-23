@@ -4,24 +4,39 @@ import de.mbis.demo.weather.service.model.CurrentWeather;
 import de.mbis.demo.weather.service.model.Main;
 import de.mbis.demo.weather.service.model.Weather;
 import de.mbis.demo.weather.service.model.Wind;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
+@ApiModel(description = "Current weather information")
 public class CurrentWeatherDto {
+    @ApiModelProperty(notes = "UUID to identify message", example = "799a211f-f470-474d-8b7a-671a12c393a6")
     private String messageId;
+    @ApiModelProperty(notes = "Message timestamp", example = "2019-08-23T10:46:42.5803489")
     private String messageTimestamp;
 
+    @ApiModelProperty(notes = "City id of weather information", example = "2857943")
     private int id;
+    @ApiModelProperty(notes = "City name of weather information", example = "Oelde")
     private String name;
+    @ApiModelProperty(notes = "Main weather condition", example = "Clear")
     private String main;
+    @ApiModelProperty(notes = "Description of current weather", example = "clear sky")
     private String description;
+    @ApiModelProperty(notes = "Url of current weather icon", example = "http://openweathermap.org/img/wn/01d@2x.png")
     private String iconUrl;
+    @ApiModelProperty(notes = "Current temperature in celsius", example = "22.95")
     private float temperature;
+    @ApiModelProperty(notes = "Current pressure in hPa", example = "1026")
     private float pressure;
+    @ApiModelProperty(notes = "Current humidity in percent", example = "40")
     private float humidity;
+    @ApiModelProperty(notes = "Current wind speed in meters per second", example = "0.5")
     private float windSpeed;
+    @ApiModelProperty(notes = "Current wind direction in meteorological degree", example = "220")
     private int windDegree;
 
     public CurrentWeatherDto() {
