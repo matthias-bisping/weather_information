@@ -31,3 +31,4 @@ build/
 .vscode/
 /frontend/node/
 /logs/
+/spring-shell.log

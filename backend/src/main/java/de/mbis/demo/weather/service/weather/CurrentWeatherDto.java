@@ -12,7 +12,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
 @ApiModel(description = "Current weather information")
-class CurrentWeatherDto {
+public class CurrentWeatherDto {
     @ApiModelProperty(notes = "UUID to identify message", example = "799a211f-f470-474d-8b7a-671a12c393a6")
     private String messageId;
     @ApiModelProperty(notes = "Message timestamp", example = "2019-08-23T10:46:42.5803489")
@@ -44,7 +44,7 @@ class CurrentWeatherDto {
         messageTimestamp = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
     }
 
-    static CurrentWeatherDto toDto(CurrentWeather currentWeather, String iconUrlTemplate) {
+    public static CurrentWeatherDto toDto(CurrentWeather currentWeather, String iconUrlTemplate) {
         if(currentWeather == null) return null;
 
         CurrentWeatherDto result = new CurrentWeatherDto();
