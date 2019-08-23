@@ -1,7 +1,7 @@
-package de.mbis.demo.weather.service.updater;
+package de.mbis.demo.weather.service.controller;
 
+import de.mbis.demo.weather.service.dto.CurrentWeatherDto;
 import de.mbis.demo.weather.service.model.CurrentWeather;
-import de.mbis.demo.weather.service.weather.CurrentWeatherDto;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;

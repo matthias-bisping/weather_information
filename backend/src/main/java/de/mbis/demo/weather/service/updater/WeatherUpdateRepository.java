@@ -1,5 +1,6 @@
 package de.mbis.demo.weather.service.updater;
 
+import de.mbis.demo.weather.service.controller.WeatherUpdaterController;
 import de.mbis.demo.weather.service.model.CurrentWeather;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

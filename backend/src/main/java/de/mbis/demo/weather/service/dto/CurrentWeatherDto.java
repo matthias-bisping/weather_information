@@ -1,4 +1,4 @@
-package de.mbis.demo.weather.service.weather;
+package de.mbis.demo.weather.service.dto;
 
 import de.mbis.demo.weather.service.model.CurrentWeather;
 import de.mbis.demo.weather.service.model.Main;

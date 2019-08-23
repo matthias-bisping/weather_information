@@ -7,7 +7,7 @@ import de.mbis.demo.weather.service.model.Wind;
 
 import java.util.Collections;
 
-class CurrentWeatherBuilder {
+public class CurrentWeatherBuilder {
     private float temp = 288.15f;
     private float pressure = 1019.0f;
     private float humidity = 72.0f;
@@ -23,81 +23,81 @@ class CurrentWeatherBuilder {
     private boolean withMain = true;
     private boolean withWeather = true;
 
-    CurrentWeatherBuilder withTemp(float temp) {
+    public CurrentWeatherBuilder withTemp(float temp) {
         this.temp = temp;
         return this;
     }
 
-    CurrentWeatherBuilder withPressure(float pressure) {
+    public CurrentWeatherBuilder withPressure(float pressure) {
         this.pressure = pressure;
         return this;
     }
 
-    CurrentWeatherBuilder withHumidity(float humidity) {
+    public CurrentWeatherBuilder withHumidity(float humidity) {
         this.humidity = humidity;
         return this;
     }
 
-    CurrentWeatherBuilder withWeatherId(int weatherId) {
+    public CurrentWeatherBuilder withWeatherId(int weatherId) {
         this.weatherId = weatherId;
         return this;
     }
 
-    CurrentWeatherBuilder withMain(String main) {
+    public CurrentWeatherBuilder withMain(String main) {
         this.main = main;
         return this;
     }
 
-    CurrentWeatherBuilder withDescription(String description) {
+    public CurrentWeatherBuilder withDescription(String description) {
         this.description = description;
         return this;
     }
 
-    CurrentWeatherBuilder withIcon(String icon) {
+    public CurrentWeatherBuilder withIcon(String icon) {
         this.icon = icon;
         return this;
     }
 
-    CurrentWeatherBuilder withSpeed(float speed) {
+    public CurrentWeatherBuilder withSpeed(float speed) {
         this.speed = speed;
         return this;
     }
 
-    CurrentWeatherBuilder withDeg(int deg) {
+    public CurrentWeatherBuilder withDeg(int deg) {
         this.deg = deg;
         return this;
     }
 
-    CurrentWeatherBuilder withId(int id) {
+    public CurrentWeatherBuilder withId(int id) {
         this.id = id;
         return this;
     }
 
-    CurrentWeatherBuilder withName(String name) {
+    public CurrentWeatherBuilder withName(String name) {
         this.name = name;
         return this;
     }
 
-    static CurrentWeatherBuilder create() {
+    public static CurrentWeatherBuilder create() {
         return new CurrentWeatherBuilder();
     }
 
-    CurrentWeatherBuilder withoutWind() {
+    public CurrentWeatherBuilder withoutWind() {
         this.withWind = false;
         return this;
     }
 
-    CurrentWeatherBuilder withoutMain() {
+    public CurrentWeatherBuilder withoutMain() {
         this.withMain = false;
         return this;
     }
 
-    CurrentWeatherBuilder withoutWeather() {
+    public CurrentWeatherBuilder withoutWeather() {
         this.withWeather = false;
         return this;
     }
 
-    CurrentWeather build() {
+    public CurrentWeather build() {
         CurrentWeather result = new CurrentWeather();
         result.setId(this.id);
         result.setName(this.name);
@@ -129,7 +129,7 @@ class CurrentWeatherBuilder {
         return result;
     }
 
-    CurrentWeatherBuilder but() {
+    public CurrentWeatherBuilder but() {
         return CurrentWeatherBuilder
                 .create()
                 .withDeg(this.deg)

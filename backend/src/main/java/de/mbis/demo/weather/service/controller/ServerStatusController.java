@@ -1,4 +1,4 @@
-package de.mbis.demo.weather.service.serverstatus;
+package de.mbis.demo.weather.service.controller;
 
 import de.mbis.demo.weather.service.model.ServerStatus;
 import io.swagger.annotations.Api;

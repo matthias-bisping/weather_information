@@ -24,10 +24,10 @@
 2019-08-23 11:50:03,859 INFO org.springframework.boot.StartupInfoLogger [main] Starting OpenWeatherProviderTest on bartman with PID 20124 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
 2019-08-23 11:50:03,860 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2019-08-23 11:50:04,018 INFO org.springframework.boot.StartupInfoLogger [main] Started OpenWeatherProviderTest in 0.183 seconds (JVM running for 5.939)
-2019-08-23 11:50:04,046 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.serverstatus.ServerStatusControllerTest], using SpringBootContextLoader
-2019-08-23 11:50:04,047 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.serverstatus.ServerStatusControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2019-08-23 11:50:04,047 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.serverstatus.ServerStatusControllerTest]: ServerStatusControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2019-08-23 11:50:04,057 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.serverstatus.ServerStatusControllerTest
+2019-08-23 11:50:04,046 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.controller.ServerStatusControllerTest], using SpringBootContextLoader
+2019-08-23 11:50:04,047 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.controller.ServerStatusControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-23 11:50:04,047 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.controller.ServerStatusControllerTest]: ServerStatusControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-23 11:50:04,057 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.controller.ServerStatusControllerTest
 2019-08-23 11:50:04,058 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 2019-08-23 11:50:04,059 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@f0381f0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7d8d671b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@28b68067, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@19540247, org.springframework.test.context.support.DirtiesContextTestExecutionListener@acb1c9c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1c681761, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@411933, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@393e7546, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6b43b101, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@37cc6017]
 2019-08-23 11:50:04,733 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -36,14 +36,14 @@
 2019-08-23 11:50:05,532 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
 2019-08-23 11:50:05,532 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
 2019-08-23 11:50:05,533 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
-2019-08-23 11:50:05,549 INFO de.mbis.demo.weather.service.weather.WeatherController [main] try to receive current weather for: Oelde
+2019-08-23 11:50:05,549 INFO de.mbis.demo.weather.service.controller.WeatherController [main] try to receive current weather for: Oelde
 2019-08-23 11:50:05,576 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
 2019-08-23 11:50:05,577 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
 2019-08-23 11:50:05,577 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
-2019-08-23 11:50:05,578 INFO de.mbis.demo.weather.service.weather.WeatherController [main] try to receive current weather for: wrong
-2019-08-23 11:50:05,580 ERROR de.mbis.demo.weather.service.weather.WeatherController [main] error on receiving current weather
+2019-08-23 11:50:05,578 INFO de.mbis.demo.weather.service.controller.WeatherController [main] try to receive current weather for: wrong
+2019-08-23 11:50:05,580 ERROR de.mbis.demo.weather.service.controller.WeatherController [main] error on receiving current weather
 de.mbis.demo.weather.service.exceptions.CityNotFoundException: City not found
-	at de.mbis.demo.weather.service.weather.WeatherController.currentWeather(WeatherController.java:40)
+	at de.mbis.demo.weather.service.controller.WeatherController.currentWeather(WeatherController.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,7 +65,7 @@ de.mbis.demo.weather.service.exceptions.CityNotFoundException: City not found
 	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:166)
 	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133)
 	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:182)
-	at de.mbis.demo.weather.service.weather.WeatherControllerTest.get_error_on_unknown_city(WeatherControllerTest.java:59)
+	at de.mbis.demo.weather.service.controller.WeatherControllerTest.get_error_on_unknown_city(WeatherControllerTest.java:59)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -138,10 +138,10 @@ de.mbis.demo.weather.service.exceptions.CityNotFoundException: City not found
 2019-08-23 11:52:08,170 INFO org.springframework.boot.StartupInfoLogger [main] Starting OpenWeatherProviderTest on bartman with PID 19904 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
 2019-08-23 11:52:08,171 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2019-08-23 11:52:08,341 INFO org.springframework.boot.StartupInfoLogger [main] Started OpenWeatherProviderTest in 0.199 seconds (JVM running for 6.074)
-2019-08-23 11:52:08,375 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.serverstatus.ServerStatusControllerTest], using SpringBootContextLoader
-2019-08-23 11:52:08,376 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.serverstatus.ServerStatusControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2019-08-23 11:52:08,377 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.serverstatus.ServerStatusControllerTest]: ServerStatusControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2019-08-23 11:52:08,386 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.serverstatus.ServerStatusControllerTest
+2019-08-23 11:52:08,375 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.controller.ServerStatusControllerTest], using SpringBootContextLoader
+2019-08-23 11:52:08,376 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.controller.ServerStatusControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-23 11:52:08,377 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.controller.ServerStatusControllerTest]: ServerStatusControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-23 11:52:08,386 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.controller.ServerStatusControllerTest
 2019-08-23 11:52:08,387 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 2019-08-23 11:52:08,388 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6cb43fd3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@35f35c59, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2245ccaa, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@22b10124, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6f36e806, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4088702d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4c24c40a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6636448b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3e18e693, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3d12f065]
 2019-08-23 11:52:09,122 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -150,14 +150,14 @@ de.mbis.demo.weather.service.exceptions.CityNotFoundException: City not found
 2019-08-23 11:52:09,882 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
 2019-08-23 11:52:09,882 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
 2019-08-23 11:52:09,883 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
-2019-08-23 11:52:09,901 INFO de.mbis.demo.weather.service.weather.WeatherController [main] try to receive current weather for: Oelde
+2019-08-23 11:52:09,901 INFO de.mbis.demo.weather.service.controller.WeatherController [main] try to receive current weather for: Oelde
 2019-08-23 11:52:09,932 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
 2019-08-23 11:52:09,932 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
 2019-08-23 11:52:09,933 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 1 ms
-2019-08-23 11:52:09,934 INFO de.mbis.demo.weather.service.weather.WeatherController [main] try to receive current weather for: wrong
-2019-08-23 11:52:09,937 ERROR de.mbis.demo.weather.service.weather.WeatherController [main] error on receiving current weather
+2019-08-23 11:52:09,934 INFO de.mbis.demo.weather.service.controller.WeatherController [main] try to receive current weather for: wrong
+2019-08-23 11:52:09,937 ERROR de.mbis.demo.weather.service.controller.WeatherController [main] error on receiving current weather
 de.mbis.demo.weather.service.exceptions.CityNotFoundException: City not found
-	at de.mbis.demo.weather.service.weather.WeatherController.currentWeather(WeatherController.java:40)
+	at de.mbis.demo.weather.service.controller.WeatherController.currentWeather(WeatherController.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -179,7 +179,7 @@ de.mbis.demo.weather.service.exceptions.CityNotFoundException: City not found
 	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:166)
 	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133)
 	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:182)
-	at de.mbis.demo.weather.service.weather.WeatherControllerTest.get_error_on_unknown_city(WeatherControllerTest.java:59)
+	at de.mbis.demo.weather.service.controller.WeatherControllerTest.get_error_on_unknown_city(WeatherControllerTest.java:59)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

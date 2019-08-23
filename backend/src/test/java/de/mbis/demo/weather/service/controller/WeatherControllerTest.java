@@ -1,7 +1,8 @@
-package de.mbis.demo.weather.service.weather;
+package de.mbis.demo.weather.service.controller;
 
 import de.mbis.demo.weather.service.exceptions.CityNotFoundException;
 import de.mbis.demo.weather.service.provider.OpenWeatherProvider;
+import de.mbis.demo.weather.service.weather.CurrentWeatherBuilder;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

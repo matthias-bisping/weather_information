@@ -1,5 +1,6 @@
-package de.mbis.demo.weather.service.weather;
+package de.mbis.demo.weather.service.controller;
 
+import de.mbis.demo.weather.service.dto.CurrentWeatherDto;
 import de.mbis.demo.weather.service.exceptions.CityNotFoundException;
 import de.mbis.demo.weather.service.provider.OpenWeatherProvider;
 import io.swagger.annotations.*;

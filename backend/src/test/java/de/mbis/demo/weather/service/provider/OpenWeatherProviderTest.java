@@ -62,7 +62,7 @@ public class OpenWeatherProviderTest {
 
     @Test
     @DisplayName("it should throw an exception on wrong city name")
-    void throws_exception_on_city_name_not_found() throws CityNotFoundException {
+    void throws_exception_on_city_name_not_found() {
         server.expect(
                 requestTo("http://api.openweathermap.org/data/2.5/weather?q=NotFound&APPID=c94345fc6cf1a078f4047180bfb7e34a&units=metric"))
                 .andRespond(withStatus(HttpStatus.NOT_FOUND));

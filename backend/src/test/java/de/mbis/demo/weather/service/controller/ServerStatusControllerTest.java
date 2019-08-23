@@ -1,4 +1,4 @@
-package de.mbis.demo.weather.service.serverstatus;
+package de.mbis.demo.weather.service.controller;
 
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeEach;

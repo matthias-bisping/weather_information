@@ -1,5 +1,6 @@
 package de.mbis.demo.weather.service.weather;
 
+import de.mbis.demo.weather.service.dto.CurrentWeatherDto;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
