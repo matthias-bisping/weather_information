@@ -13,7 +13,6 @@ import {AngularMaterialModule} from "./angular-material.module";
 import {MatTabsModule} from "@angular/material";
 import {AutomaticComponent} from './automatic/automatic.component';
 import {CurrentWeatherViewComponent} from './shared/current-weather-view/current-weather-view.component';
-import {FlexLayoutModule} from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -32,8 +31,7 @@ import {FlexLayoutModule} from "@angular/flex-layout";
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    MatTabsModule,
-    FlexLayoutModule
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
