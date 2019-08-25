@@ -5760,3 +5760,711 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2019-08-25 17:42:09,444 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
 2019-08-25 17:42:09,444 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
 2019-08-25 17:42:09,460 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-25 17:44:12,210 INFO org.springframework.boot.StartupInfoLogger [main] Starting WeatherInformationApplicationTests on bartman with PID 3892 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 17:44:12,210 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 17:44:14,019 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8090 (http)
+2019-08-25 17:44:14,034 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8090"]
+2019-08-25 17:44:14,066 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-08-25 17:44:14,066 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-25 17:44:14,222 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-08-25 17:44:14,222 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1777 ms
+2019-08-25 17:44:14,763 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-08-25 17:44:14,779 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-08-25 17:44:14,857 INFO org.quartz.impl.StdSchedulerFactory [main] Using default implementation for ThreadExecutor
+2019-08-25 17:44:14,857 INFO org.quartz.core.SchedulerSignalerImpl [main] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-08-25 17:44:14,857 INFO org.quartz.core.QuartzScheduler [main] Quartz Scheduler v.2.3.1 created.
+2019-08-25 17:44:14,857 INFO org.quartz.simpl.RAMJobStore [main] RAMJobStore initialized.
+2019-08-25 17:44:14,857 INFO org.quartz.core.QuartzScheduler [main] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-08-25 17:44:14,857 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-08-25 17:44:14,873 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler version: 2.3.1
+2019-08-25 17:44:14,873 INFO org.quartz.core.QuartzScheduler [main] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@628962e5
+2019-08-25 17:44:14,873 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Set updater to default values
+2019-08-25 17:44:14,873 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] WeatherUpdaterService: Update current weather to: Berlin, 60 sec
+2019-08-25 17:44:14,873 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Start new job
+2019-08-25 17:44:15,451 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-25 17:44:15,482 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-08-25 17:44:15,529 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'brokerChannelExecutor'
+2019-08-25 17:44:15,763 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [resources/index.html]
+2019-08-25 17:44:16,155 WARN org.jline.utils.Log [main] Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2019-08-25 17:44:16,280 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2019-08-25 17:44:16,295 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2019-08-25 17:44:16,327 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2019-08-25 17:44:16,467 INFO org.springframework.core.log.CompositeLog [main] Starting...
+2019-08-25 17:44:16,467 INFO org.springframework.core.log.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-08-25 17:44:16,467 INFO org.springframework.core.log.CompositeLog [main] Started.
+2019-08-25 17:44:16,467 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [main] Starting Quartz Scheduler now
+2019-08-25 17:44:16,467 INFO org.quartz.core.QuartzScheduler [main] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-08-25 17:44:16,467 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8090"]
+2019-08-25 17:44:16,467 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Start Weather Updater Job
+2019-08-25 17:44:16,499 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8090 (http) with context path '/weather'
+2019-08-25 17:44:16,499 INFO org.springframework.boot.StartupInfoLogger [main] Started WeatherInformationApplicationTests in 4.766 seconds (JVM running for 5.711)
+2019-08-25 17:44:16,780 INFO de.mbis.demo.weather.service.updater.WeatherUpdateRepository [quartzScheduler_Worker-1] Repository: Update current weather
+2019-08-25 17:44:16,795 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Finish Weather Updater Job
+2019-08-25 17:46:10,289 INFO org.springframework.boot.StartupInfoLogger [main] Starting ServerStatusControllerTest on bartman with PID 16880 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 17:46:10,304 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 17:46:12,025 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8090 (http)
+2019-08-25 17:46:12,056 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8090"]
+2019-08-25 17:46:12,087 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-08-25 17:46:12,087 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-25 17:46:12,228 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-08-25 17:46:12,228 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1698 ms
+2019-08-25 17:46:13,178 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-25 17:46:13,318 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-25 17:46:13,381 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [resources/index.html]
+2019-08-25 17:46:13,537 INFO org.quartz.impl.StdSchedulerFactory [main] Using default implementation for ThreadExecutor
+2019-08-25 17:46:13,553 INFO org.quartz.core.SchedulerSignalerImpl [main] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-08-25 17:46:13,553 INFO org.quartz.core.QuartzScheduler [main] Quartz Scheduler v.2.3.1 created.
+2019-08-25 17:46:13,553 INFO org.quartz.simpl.RAMJobStore [main] RAMJobStore initialized.
+2019-08-25 17:46:13,553 INFO org.quartz.core.QuartzScheduler [main] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-08-25 17:46:13,553 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-08-25 17:46:13,553 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler version: 2.3.1
+2019-08-25 17:46:13,553 INFO org.quartz.core.QuartzScheduler [main] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@707f4647
+2019-08-25 17:46:13,818 WARN org.jline.utils.Log [main] Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2019-08-25 17:46:13,939 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2019-08-25 17:46:13,970 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2019-08-25 17:46:13,986 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2019-08-25 17:46:14,142 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [main] Starting Quartz Scheduler now
+2019-08-25 17:46:14,142 INFO org.quartz.core.QuartzScheduler [main] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-08-25 17:46:14,142 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8090"]
+2019-08-25 17:46:14,174 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8090 (http) with context path '/weather'
+2019-08-25 17:46:14,174 INFO org.springframework.boot.StartupInfoLogger [main] Started ServerStatusControllerTest in 4.292 seconds (JVM running for 5.394)
+2019-08-25 17:46:49,137 INFO org.springframework.boot.StartupInfoLogger [main] Starting ServerStatusControllerTest on bartman with PID 15640 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 17:46:49,137 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 17:46:50,821 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8090 (http)
+2019-08-25 17:46:50,853 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8090"]
+2019-08-25 17:46:50,868 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-08-25 17:46:50,868 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-25 17:46:51,040 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-08-25 17:46:51,040 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1685 ms
+2019-08-25 17:46:51,990 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-25 17:46:52,131 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-25 17:46:52,193 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [resources/index.html]
+2019-08-25 17:46:52,563 WARN org.jline.utils.Log [main] Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2019-08-25 17:46:52,672 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2019-08-25 17:46:52,704 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2019-08-25 17:46:52,735 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2019-08-25 17:46:52,907 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8090"]
+2019-08-25 17:46:52,927 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8090 (http) with context path '/weather'
+2019-08-25 17:46:52,942 INFO org.springframework.boot.StartupInfoLogger [main] Started ServerStatusControllerTest in 4.232 seconds (JVM running for 5.455)
+2019-08-25 17:47:59,928 INFO org.springframework.boot.StartupInfoLogger [main] Starting ServerStatusControllerTest on bartman with PID 17236 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 17:47:59,928 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 17:48:01,624 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8090 (http)
+2019-08-25 17:48:01,640 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8090"]
+2019-08-25 17:48:01,655 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-08-25 17:48:01,655 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-25 17:48:01,812 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-08-25 17:48:01,812 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1634 ms
+2019-08-25 17:48:02,711 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-25 17:48:02,836 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-25 17:48:02,883 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [resources/index.html]
+2019-08-25 17:48:03,055 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2019-08-25 17:48:03,070 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2019-08-25 17:48:03,102 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2019-08-25 17:48:03,273 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8090"]
+2019-08-25 17:48:03,289 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8090 (http) with context path '/weather'
+2019-08-25 17:48:03,309 INFO org.springframework.boot.StartupInfoLogger [main] Started ServerStatusControllerTest in 3.797 seconds (JVM running for 4.949)
+2019-08-25 17:48:04,386 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-25 17:48:04,386 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-08-25 17:48:04,417 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] Completed initialization in 31 ms
+2019-08-25 17:48:05,111 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-08-25 17:48:05,111 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-08-25 17:48:05,111 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
+2019-08-25 17:48:05,126 INFO de.mbis.demo.weather.service.controller.WeatherController [main] try to receive current weather for: Oelde
+2019-08-25 17:48:05,157 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-08-25 17:48:05,157 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-08-25 17:48:05,157 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
+2019-08-25 17:48:05,157 INFO de.mbis.demo.weather.service.controller.WeatherController [main] try to receive current weather for: wrong
+2019-08-25 17:48:05,157 ERROR de.mbis.demo.weather.service.controller.WeatherController [main] error on receiving current weather
+de.mbis.demo.weather.service.exceptions.CityNotFoundException: City not found
+	at de.mbis.demo.weather.service.controller.WeatherController.currentWeather(WeatherController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:71)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:166)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:182)
+	at de.mbis.demo.weather.service.controller.WeatherControllerTest.get_error_on_unknown_city(WeatherControllerTest.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:532)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-08-25 17:48:05,157 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest], using SpringBootContextLoader
+2019-08-25 17:48:05,157 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-25 17:48:05,157 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest]: OpenWeatherProviderIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-25 17:48:05,173 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest
+2019-08-25 17:48:05,173 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-25 17:48:05,173 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3a75d9a1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@698daff6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7a085d02, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6cee52e2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7842260f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7cb4d4ee, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@44ec6637, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5a0b550a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3390621a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@69d9d322]
+2019-08-25 17:48:05,454 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderTest], using SpringBootContextLoader
+2019-08-25 17:48:05,454 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-25 17:48:05,454 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderTest]: OpenWeatherProviderTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-25 17:48:05,470 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.provider.OpenWeatherProviderTest
+2019-08-25 17:48:05,470 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-25 17:48:05,470 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3368cf02, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2e76ade9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7a3ab73a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@12a8d03b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@67cd1db3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7ccfed46, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@53630682, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@71e2ddd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@8318808, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@b97f195]
+2019-08-25 17:48:05,486 INFO org.springframework.boot.StartupInfoLogger [main] Starting OpenWeatherProviderTest on bartman with PID 17236 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 17:48:05,486 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 17:48:05,642 INFO org.springframework.boot.StartupInfoLogger [main] Started OpenWeatherProviderTest in 0.172 seconds (JVM running for 7.293)
+2019-08-25 17:48:05,673 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.WeatherInformationApplicationTests], using SpringBootContextLoader
+2019-08-25 17:48:05,673 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.WeatherInformationApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-25 17:48:05,673 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.WeatherInformationApplicationTests]: WeatherInformationApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-25 17:48:05,689 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.WeatherInformationApplicationTests
+2019-08-25 17:48:05,691 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-25 17:48:05,693 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3aebdb4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4fd70118, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1db7c267, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@516370c1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27563444, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@507e3e77, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@73796ae5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3956e933, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2fb40e49, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@e98004e]
+2019-08-25 17:48:05,702 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-25 17:50:03,424 INFO org.springframework.boot.StartupInfoLogger [main] Starting ServerStatusControllerTest on bartman with PID 16148 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 17:50:03,424 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 17:50:05,148 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8090 (http)
+2019-08-25 17:50:05,179 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8090"]
+2019-08-25 17:50:05,195 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-08-25 17:50:05,195 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-25 17:50:05,360 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-08-25 17:50:05,360 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1707 ms
+2019-08-25 17:50:05,860 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-08-25 17:50:05,875 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-08-25 17:50:05,969 INFO org.quartz.impl.StdSchedulerFactory [main] Using default implementation for ThreadExecutor
+2019-08-25 17:50:05,969 INFO org.quartz.core.SchedulerSignalerImpl [main] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-08-25 17:50:05,969 INFO org.quartz.core.QuartzScheduler [main] Quartz Scheduler v.2.3.1 created.
+2019-08-25 17:50:05,985 INFO org.quartz.simpl.RAMJobStore [main] RAMJobStore initialized.
+2019-08-25 17:50:05,985 INFO org.quartz.core.QuartzScheduler [main] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-08-25 17:50:05,985 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-08-25 17:50:05,985 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler version: 2.3.1
+2019-08-25 17:50:05,985 INFO org.quartz.core.QuartzScheduler [main] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6115846e
+2019-08-25 17:50:05,985 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Set updater to default values
+2019-08-25 17:50:05,985 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] WeatherUpdaterService: Update current weather to: Berlin, 60 sec
+2019-08-25 17:50:05,985 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Start new job
+2019-08-25 17:50:06,485 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-25 17:50:06,531 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-08-25 17:50:06,563 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'brokerChannelExecutor'
+2019-08-25 17:50:06,799 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [resources/index.html]
+2019-08-25 17:50:06,939 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2019-08-25 17:50:06,955 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2019-08-25 17:50:06,986 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2019-08-25 17:50:07,124 INFO org.springframework.core.log.CompositeLog [main] Starting...
+2019-08-25 17:50:07,124 INFO org.springframework.core.log.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-08-25 17:50:07,124 INFO org.springframework.core.log.CompositeLog [main] Started.
+2019-08-25 17:50:07,124 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [main] Starting Quartz Scheduler now
+2019-08-25 17:50:07,124 INFO org.quartz.core.QuartzScheduler [main] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-08-25 17:50:07,140 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8090"]
+2019-08-25 17:50:07,140 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Start Weather Updater Job
+2019-08-25 17:50:07,171 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8090 (http) with context path '/weather'
+2019-08-25 17:50:07,171 INFO org.springframework.boot.StartupInfoLogger [main] Started ServerStatusControllerTest in 4.137 seconds (JVM running for 5.354)
+2019-08-25 17:50:07,421 INFO de.mbis.demo.weather.service.updater.WeatherUpdateRepository [quartzScheduler_Worker-1] Repository: Update current weather
+2019-08-25 17:50:07,453 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Finish Weather Updater Job
+2019-08-25 17:50:08,149 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-25 17:50:08,149 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-08-25 17:50:08,180 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] Completed initialization in 31 ms
+2019-08-25 17:50:08,815 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-08-25 17:50:08,815 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-08-25 17:50:08,815 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
+2019-08-25 17:50:08,831 INFO de.mbis.demo.weather.service.controller.WeatherController [main] try to receive current weather for: Oelde
+2019-08-25 17:50:08,862 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-08-25 17:50:08,862 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-08-25 17:50:08,862 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
+2019-08-25 17:50:08,862 INFO de.mbis.demo.weather.service.controller.WeatherController [main] try to receive current weather for: wrong
+2019-08-25 17:50:08,862 ERROR de.mbis.demo.weather.service.controller.WeatherController [main] error on receiving current weather
+de.mbis.demo.weather.service.exceptions.CityNotFoundException: City not found
+	at de.mbis.demo.weather.service.controller.WeatherController.currentWeather(WeatherController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:71)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:166)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:182)
+	at de.mbis.demo.weather.service.controller.WeatherControllerTest.get_error_on_unknown_city(WeatherControllerTest.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:532)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2019-08-25 17:50:08,862 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest], using SpringBootContextLoader
+2019-08-25 17:50:08,862 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-25 17:50:08,862 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest]: OpenWeatherProviderIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-25 17:50:08,878 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest
+2019-08-25 17:50:08,878 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-25 17:50:08,878 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@22f756c5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@485a5c9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1d397e87, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@36def543, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e07dc23, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7859fc7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@519e14f6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@10ab976b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5da799, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2b0d6bf2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@a15e3c1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@46c92d27]
+2019-08-25 17:50:09,018 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderTest], using SpringBootContextLoader
+2019-08-25 17:50:09,018 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-25 17:50:09,018 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderTest]: OpenWeatherProviderTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-25 17:50:09,018 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.provider.OpenWeatherProviderTest
+2019-08-25 17:50:09,018 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-25 17:50:09,018 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2bc21edd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3599b7e8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2862bac6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@52e5ad71, org.springframework.test.context.support.DirtiesContextTestExecutionListener@696a6506, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1134a934, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2cbd855e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@534c3b9d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69b436a7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5dfd4fac, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1d2aa638, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2f08e6d3]
+2019-08-25 17:50:09,050 INFO org.springframework.boot.StartupInfoLogger [main] Starting OpenWeatherProviderTest on bartman with PID 16148 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 17:50:09,050 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 17:50:09,253 INFO org.springframework.boot.StartupInfoLogger [main] Started OpenWeatherProviderTest in 0.235 seconds (JVM running for 7.428)
+2019-08-25 17:50:09,284 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.WeatherInformationApplicationTests], using SpringBootContextLoader
+2019-08-25 17:50:09,284 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.WeatherInformationApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-25 17:50:09,284 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.WeatherInformationApplicationTests]: WeatherInformationApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-25 17:50:09,284 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.WeatherInformationApplicationTests
+2019-08-25 17:50:09,284 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-25 17:50:09,284 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5a35efac, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@70d24586, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@58e9e852, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@52238861, org.springframework.test.context.support.DirtiesContextTestExecutionListener@279e4506, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4582da06, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@523e019c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1c10eb3a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@49f32bcb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1af29a19, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@38624a3a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@23b02f37]
+2019-08-25 17:50:09,300 INFO org.springframework.core.log.CompositeLog [Thread-3] Stopping...
+2019-08-25 17:50:09,300 INFO org.springframework.core.log.CompositeLog [Thread-3] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-08-25 17:50:09,300 INFO org.springframework.core.log.CompositeLog [Thread-3] Stopped.
+2019-08-25 17:50:09,300 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-08-25 17:50:09,300 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'brokerChannelExecutor'
+2019-08-25 17:50:09,300 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-08-25 17:50:09,300 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [Thread-3] Shutting down Quartz Scheduler
+2019-08-25 17:50:09,300 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-08-25 17:50:09,300 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-08-25 17:50:09,300 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-08-25 17:50:09,300 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-08-25 17:50:09,300 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-08-25 18:01:20,139 INFO org.springframework.boot.StartupInfoLogger [main] Starting ServerStatusControllerTest on bartman with PID 2184 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 18:01:20,155 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 18:01:22,535 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8090 (http)
+2019-08-25 18:01:22,550 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8090"]
+2019-08-25 18:01:22,581 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-08-25 18:01:22,581 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-25 18:01:22,769 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-08-25 18:01:22,769 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2286 ms
+2019-08-25 18:01:23,560 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-08-25 18:01:23,576 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-08-25 18:01:23,654 INFO org.quartz.impl.StdSchedulerFactory [main] Using default implementation for ThreadExecutor
+2019-08-25 18:01:23,669 INFO org.quartz.core.SchedulerSignalerImpl [main] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-08-25 18:01:23,669 INFO org.quartz.core.QuartzScheduler [main] Quartz Scheduler v.2.3.1 created.
+2019-08-25 18:01:23,669 INFO org.quartz.simpl.RAMJobStore [main] RAMJobStore initialized.
+2019-08-25 18:01:23,669 INFO org.quartz.core.QuartzScheduler [main] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-08-25 18:01:23,669 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-08-25 18:01:23,669 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler version: 2.3.1
+2019-08-25 18:01:23,669 INFO org.quartz.core.QuartzScheduler [main] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5b895e76
+2019-08-25 18:01:23,669 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Set updater to default values
+2019-08-25 18:01:23,669 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] WeatherUpdaterService: Update current weather to: Berlin, 60 sec
+2019-08-25 18:01:23,669 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Start new job
+2019-08-25 18:01:24,368 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-25 18:01:24,414 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-08-25 18:01:24,477 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'brokerChannelExecutor'
+2019-08-25 18:01:24,774 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [resources/index.html]
+2019-08-25 18:01:25,227 WARN org.jline.utils.Log [main] Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2019-08-25 18:01:25,382 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2019-08-25 18:01:25,414 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2019-08-25 18:01:25,445 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2019-08-25 18:01:25,617 INFO org.springframework.core.log.CompositeLog [main] Starting...
+2019-08-25 18:01:25,617 INFO org.springframework.core.log.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-08-25 18:01:25,617 INFO org.springframework.core.log.CompositeLog [main] Started.
+2019-08-25 18:01:25,617 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [main] Starting Quartz Scheduler now
+2019-08-25 18:01:25,617 INFO org.quartz.core.QuartzScheduler [main] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-08-25 18:01:25,632 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8090"]
+2019-08-25 18:01:25,632 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Start Weather Updater Job
+2019-08-25 18:01:25,664 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8090 (http) with context path '/weather'
+2019-08-25 18:01:25,664 INFO org.springframework.boot.StartupInfoLogger [main] Started ServerStatusControllerTest in 6.017 seconds (JVM running for 8.252)
+2019-08-25 18:01:25,945 INFO de.mbis.demo.weather.service.updater.WeatherUpdateRepository [quartzScheduler_Worker-1] Repository: Update current weather
+2019-08-25 18:01:25,976 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Finish Weather Updater Job
+2019-08-25 18:02:02,271 INFO org.springframework.core.log.CompositeLog [Thread-3] Stopping...
+2019-08-25 18:02:02,271 INFO org.springframework.core.log.CompositeLog [Thread-3] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-08-25 18:02:02,271 INFO org.springframework.core.log.CompositeLog [Thread-3] Stopped.
+2019-08-25 18:02:02,271 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-08-25 18:02:02,271 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'brokerChannelExecutor'
+2019-08-25 18:02:02,271 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-08-25 18:02:02,271 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [Thread-3] Shutting down Quartz Scheduler
+2019-08-25 18:02:02,271 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-08-25 18:02:02,271 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-08-25 18:02:02,271 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-08-25 18:02:02,271 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-08-25 18:02:02,271 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-08-25 18:09:13,721 INFO org.springframework.boot.StartupInfoLogger [main] Starting WeatherInformationApplicationTests on bartman with PID 16388 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 18:09:13,721 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 18:09:16,008 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8090 (http)
+2019-08-25 18:09:16,039 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8090"]
+2019-08-25 18:09:16,055 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-08-25 18:09:16,055 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-25 18:09:16,242 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-08-25 18:09:16,242 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2287 ms
+2019-08-25 18:09:16,930 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-08-25 18:09:16,930 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-08-25 18:09:17,024 INFO org.quartz.impl.StdSchedulerFactory [main] Using default implementation for ThreadExecutor
+2019-08-25 18:09:17,039 INFO org.quartz.core.SchedulerSignalerImpl [main] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-08-25 18:09:17,039 INFO org.quartz.core.QuartzScheduler [main] Quartz Scheduler v.2.3.1 created.
+2019-08-25 18:09:17,039 INFO org.quartz.simpl.RAMJobStore [main] RAMJobStore initialized.
+2019-08-25 18:09:17,039 INFO org.quartz.core.QuartzScheduler [main] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-08-25 18:09:17,039 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-08-25 18:09:17,039 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler version: 2.3.1
+2019-08-25 18:09:17,039 INFO org.quartz.core.QuartzScheduler [main] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5034681f
+2019-08-25 18:09:17,039 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Set updater to default values
+2019-08-25 18:09:17,039 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] WeatherUpdaterService: Update current weather to: Berlin, 60 sec
+2019-08-25 18:09:17,039 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Start new job
+2019-08-25 18:09:17,649 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-25 18:09:17,696 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-08-25 18:09:17,758 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'brokerChannelExecutor'
+2019-08-25 18:09:18,036 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [resources/index.html]
+2019-08-25 18:09:18,480 WARN org.jline.utils.Log [main] Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2019-08-25 18:09:18,621 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2019-08-25 18:09:18,652 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2019-08-25 18:09:18,684 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2019-08-25 18:09:18,840 INFO org.springframework.core.log.CompositeLog [main] Starting...
+2019-08-25 18:09:18,840 INFO org.springframework.core.log.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-08-25 18:09:18,840 INFO org.springframework.core.log.CompositeLog [main] Started.
+2019-08-25 18:09:18,840 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [main] Starting Quartz Scheduler now
+2019-08-25 18:09:18,840 INFO org.quartz.core.QuartzScheduler [main] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-08-25 18:09:18,855 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8090"]
+2019-08-25 18:09:18,855 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Start Weather Updater Job
+2019-08-25 18:09:18,902 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8090 (http) with context path '/weather'
+2019-08-25 18:09:18,902 INFO org.springframework.boot.StartupInfoLogger [main] Started WeatherInformationApplicationTests in 5.664 seconds (JVM running for 6.832)
+2019-08-25 18:09:19,169 INFO de.mbis.demo.weather.service.updater.WeatherUpdateRepository [quartzScheduler_Worker-1] Repository: Update current weather
+2019-08-25 18:09:19,201 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Finish Weather Updater Job
+2019-08-25 18:09:33,588 INFO org.springframework.core.log.CompositeLog [Thread-3] Stopping...
+2019-08-25 18:09:33,588 INFO org.springframework.core.log.CompositeLog [Thread-3] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-08-25 18:09:33,588 INFO org.springframework.core.log.CompositeLog [Thread-3] Stopped.
+2019-08-25 18:09:33,588 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-08-25 18:09:33,588 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'brokerChannelExecutor'
+2019-08-25 18:09:33,588 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-08-25 18:09:33,588 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [Thread-3] Shutting down Quartz Scheduler
+2019-08-25 18:09:33,588 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-08-25 18:09:33,588 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-08-25 18:09:33,588 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-08-25 18:09:33,588 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-08-25 18:09:33,588 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-08-25 18:17:04,439 INFO org.springframework.boot.StartupInfoLogger [main] Starting WeatherInformationApplicationTests on bartman with PID 16328 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 18:17:04,439 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 18:17:06,640 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8090 (http)
+2019-08-25 18:17:06,655 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8090"]
+2019-08-25 18:17:06,671 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-08-25 18:17:06,671 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-25 18:17:06,852 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-08-25 18:17:06,852 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2147 ms
+2019-08-25 18:17:07,446 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-08-25 18:17:07,446 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-08-25 18:17:07,524 INFO org.quartz.impl.StdSchedulerFactory [main] Using default implementation for ThreadExecutor
+2019-08-25 18:17:07,539 INFO org.quartz.core.SchedulerSignalerImpl [main] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-08-25 18:17:07,539 INFO org.quartz.core.QuartzScheduler [main] Quartz Scheduler v.2.3.1 created.
+2019-08-25 18:17:07,539 INFO org.quartz.simpl.RAMJobStore [main] RAMJobStore initialized.
+2019-08-25 18:17:07,539 INFO org.quartz.core.QuartzScheduler [main] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-08-25 18:17:07,539 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-08-25 18:17:07,539 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler version: 2.3.1
+2019-08-25 18:17:07,539 INFO org.quartz.core.QuartzScheduler [main] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@212e39ee
+2019-08-25 18:17:07,539 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Set updater to default values
+2019-08-25 18:17:07,539 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] WeatherUpdaterService: Update current weather to: Berlin, 60 sec
+2019-08-25 18:17:07,539 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Start new job
+2019-08-25 18:17:08,451 WARN org.jline.utils.Log [main] Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2019-08-25 18:17:08,592 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-25 18:17:08,639 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-08-25 18:17:08,701 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'brokerChannelExecutor'
+2019-08-25 18:17:08,967 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [resources/index.html]
+2019-08-25 18:17:09,186 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2019-08-25 18:17:09,201 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2019-08-25 18:17:09,241 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2019-08-25 18:17:09,429 INFO org.springframework.core.log.CompositeLog [main] Starting...
+2019-08-25 18:17:09,429 INFO org.springframework.core.log.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-08-25 18:17:09,429 INFO org.springframework.core.log.CompositeLog [main] Started.
+2019-08-25 18:17:09,429 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [main] Starting Quartz Scheduler now
+2019-08-25 18:17:09,429 INFO org.quartz.core.QuartzScheduler [main] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-08-25 18:17:09,429 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8090"]
+2019-08-25 18:17:09,444 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Start Weather Updater Job
+2019-08-25 18:17:09,475 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8090 (http) with context path '/weather'
+2019-08-25 18:17:09,475 INFO org.springframework.boot.StartupInfoLogger [main] Started WeatherInformationApplicationTests in 5.542 seconds (JVM running for 6.728)
+2019-08-25 18:17:09,772 INFO de.mbis.demo.weather.service.updater.WeatherUpdateRepository [quartzScheduler_Worker-1] Repository: Update current weather
+2019-08-25 18:17:09,804 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Finish Weather Updater Job
+2019-08-25 18:18:07,565 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-2] Start Weather Updater Job
+2019-08-25 18:18:07,706 INFO de.mbis.demo.weather.service.updater.WeatherUpdateRepository [quartzScheduler_Worker-2] Repository: Update current weather
+2019-08-25 18:18:07,706 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-2] Finish Weather Updater Job
+2019-08-25 18:18:08,711 INFO org.springframework.web.socket.config.WebSocketMessageBrokerStats [MessageBroker-1] WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2019-08-25 18:19:07,568 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-3] Start Weather Updater Job
+2019-08-25 18:19:07,709 INFO de.mbis.demo.weather.service.updater.WeatherUpdateRepository [quartzScheduler_Worker-3] Repository: Update current weather
+2019-08-25 18:19:07,709 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-3] Finish Weather Updater Job
+2019-08-25 18:20:06,164 INFO org.springframework.core.log.CompositeLog [Thread-3] Stopping...
+2019-08-25 18:20:06,164 INFO org.springframework.core.log.CompositeLog [Thread-3] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-08-25 18:20:06,164 INFO org.springframework.core.log.CompositeLog [Thread-3] Stopped.
+2019-08-25 18:20:06,164 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-08-25 18:20:06,164 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'brokerChannelExecutor'
+2019-08-25 18:20:06,164 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-08-25 18:20:06,164 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [Thread-3] Shutting down Quartz Scheduler
+2019-08-25 18:20:06,164 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-08-25 18:20:06,164 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-08-25 18:20:06,164 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-08-25 18:20:06,180 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-08-25 18:20:06,180 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-08-25 18:25:43,935 INFO org.springframework.boot.StartupInfoLogger [main] Starting ServerStatusControllerTest on bartman with PID 3432 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 18:25:43,935 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 18:25:46,535 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8090 (http)
+2019-08-25 18:25:46,566 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8090"]
+2019-08-25 18:25:46,613 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-08-25 18:25:46,613 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-25 18:25:46,800 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-08-25 18:25:46,800 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2459 ms
+2019-08-25 18:25:47,451 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-08-25 18:25:47,467 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-08-25 18:25:47,560 INFO org.quartz.impl.StdSchedulerFactory [main] Using default implementation for ThreadExecutor
+2019-08-25 18:25:47,576 INFO org.quartz.core.SchedulerSignalerImpl [main] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-08-25 18:25:47,576 INFO org.quartz.core.QuartzScheduler [main] Quartz Scheduler v.2.3.1 created.
+2019-08-25 18:25:47,576 INFO org.quartz.simpl.RAMJobStore [main] RAMJobStore initialized.
+2019-08-25 18:25:47,576 INFO org.quartz.core.QuartzScheduler [main] Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-08-25 18:25:47,576 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-08-25 18:25:47,576 INFO org.quartz.impl.StdSchedulerFactory [main] Quartz scheduler version: 2.3.1
+2019-08-25 18:25:47,576 INFO org.quartz.core.QuartzScheduler [main] JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@280484c7
+2019-08-25 18:25:47,576 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Set updater to default values
+2019-08-25 18:25:47,576 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] WeatherUpdaterService: Update current weather to: Berlin, 60 sec
+2019-08-25 18:25:47,576 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterService [main] Start new job
+2019-08-25 18:25:48,154 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-25 18:25:48,185 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-08-25 18:25:48,232 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'brokerChannelExecutor'
+2019-08-25 18:25:48,460 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [resources/index.html]
+2019-08-25 18:25:48,632 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2019-08-25 18:25:48,663 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2019-08-25 18:25:48,710 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2019-08-25 18:25:48,866 INFO org.springframework.core.log.CompositeLog [main] Starting...
+2019-08-25 18:25:48,866 INFO org.springframework.core.log.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-08-25 18:25:48,866 INFO org.springframework.core.log.CompositeLog [main] Started.
+2019-08-25 18:25:48,866 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [main] Starting Quartz Scheduler now
+2019-08-25 18:25:48,866 INFO org.quartz.core.QuartzScheduler [main] Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-08-25 18:25:48,866 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8090"]
+2019-08-25 18:25:48,866 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Start Weather Updater Job
+2019-08-25 18:25:48,898 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8090 (http) with context path '/weather'
+2019-08-25 18:25:48,913 INFO org.springframework.boot.StartupInfoLogger [main] Started ServerStatusControllerTest in 5.378 seconds (JVM running for 6.394)
+2019-08-25 18:25:49,163 INFO de.mbis.demo.weather.service.updater.WeatherUpdateRepository [quartzScheduler_Worker-1] Repository: Update current weather
+2019-08-25 18:25:49,194 INFO de.mbis.demo.weather.service.updater.WeatherUpdaterJob [quartzScheduler_Worker-1] Finish Weather Updater Job
+2019-08-25 18:25:49,969 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-25 18:25:49,969 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-08-25 18:25:49,985 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] Completed initialization in 16 ms
+2019-08-25 18:25:50,703 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-08-25 18:25:50,703 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-08-25 18:25:50,703 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
+2019-08-25 18:25:50,718 INFO de.mbis.demo.weather.service.controller.WeatherController [main] try to receive current weather for: Oelde
+2019-08-25 18:25:50,734 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-08-25 18:25:50,749 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-08-25 18:25:50,749 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 0 ms
+2019-08-25 18:25:50,749 INFO de.mbis.demo.weather.service.controller.WeatherController [main] try to receive current weather for: wrong
+2019-08-25 18:25:50,749 ERROR de.mbis.demo.weather.service.controller.WeatherController [main] error on receiving current weather
+de.mbis.demo.weather.service.exceptions.CityNotFoundException: City not found
+	at de.mbis.demo.weather.service.controller.WeatherController.currentWeather(WeatherController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:71)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:166)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:182)
+	at de.mbis.demo.weather.service.controller.WeatherControllerTest.get_error_on_unknown_city(WeatherControllerTest.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:532)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$4(NodeTestTask.java:112)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:98)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:74)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+2019-08-25 18:25:50,749 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest], using SpringBootContextLoader
+2019-08-25 18:25:50,749 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-25 18:25:50,749 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest]: OpenWeatherProviderIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-25 18:25:50,765 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.provider.OpenWeatherProviderIntegrationTest
+2019-08-25 18:25:50,765 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-25 18:25:50,765 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6d2693f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@352a8183, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@361d169a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@47a68e3f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@52288c65, org.springframework.test.context.transaction.TransactionalTestExecutionListener@33ef393a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6d18401b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1ebcfcf1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@8e100e7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@420dde28, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6d3a56ea, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@141874c8]
+2019-08-25 18:25:50,937 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderTest], using SpringBootContextLoader
+2019-08-25 18:25:50,937 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-25 18:25:50,937 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.provider.OpenWeatherProviderTest]: OpenWeatherProviderTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-25 18:25:50,953 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.provider.OpenWeatherProviderTest
+2019-08-25 18:25:50,953 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-25 18:25:50,953 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@278df226, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@eea69a9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@28a33dc9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1609ed55, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5edd2170, org.springframework.test.context.transaction.TransactionalTestExecutionListener@327ac23, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32db94fb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6b61a4b0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5c00de0d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6278371a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@c6a1be2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6a486afb]
+2019-08-25 18:25:50,999 INFO org.springframework.boot.StartupInfoLogger [main] Starting OpenWeatherProviderTest on bartman with PID 3432 (started by Matthias in C:\Users\Matthias\IdeaProjects\weather_information\backend)
+2019-08-25 18:25:50,999 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-08-25 18:25:51,212 INFO org.springframework.boot.StartupInfoLogger [main] Started OpenWeatherProviderTest in 0.259 seconds (JVM running for 8.693)
+2019-08-25 18:25:51,228 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.mbis.demo.weather.service.WeatherInformationApplicationTests], using SpringBootContextLoader
+2019-08-25 18:25:51,243 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [de.mbis.demo.weather.service.WeatherInformationApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-25 18:25:51,243 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [de.mbis.demo.weather.service.WeatherInformationApplicationTests]: WeatherInformationApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-25 18:25:51,243 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration de.mbis.demo.weather.service.WeatherInformationApplication for test class de.mbis.demo.weather.service.WeatherInformationApplicationTests
+2019-08-25 18:25:51,243 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-25 18:25:51,243 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4feea86f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a9c848, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@498cf1dc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@b9c8678, org.springframework.test.context.support.DirtiesContextTestExecutionListener@318beab4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@79a88f45, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@578483bd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@38447073, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@56f4f385, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6b9b9cb9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@18f1631c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3ad5f99]
+2019-08-25 18:25:51,447 INFO org.springframework.core.log.CompositeLog [Thread-3] Stopping...
+2019-08-25 18:25:51,447 INFO org.springframework.core.log.CompositeLog [Thread-3] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-08-25 18:25:51,447 INFO org.springframework.core.log.CompositeLog [Thread-3] Stopped.
+2019-08-25 18:25:51,447 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-08-25 18:25:51,447 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'brokerChannelExecutor'
+2019-08-25 18:25:51,447 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-08-25 18:25:51,447 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [Thread-3] Shutting down Quartz Scheduler
+2019-08-25 18:25:51,447 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-08-25 18:25:51,447 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-08-25 18:25:51,447 INFO org.quartz.core.QuartzScheduler [Thread-3] Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-08-25 18:25:51,447 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-08-25 18:25:51,447 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-3] Shutting down ExecutorService 'clientInboundChannelExecutor'
