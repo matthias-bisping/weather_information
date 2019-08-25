@@ -4,6 +4,7 @@ import {Observable, throwError} from "rxjs";
 import {ServerStatus} from "./server-status";
 import {catchError, map, retry} from "rxjs/operators";
 import {CurrentWeather} from "./current-weather";
+import {Properties} from "./properties";
 
 @Injectable({
   providedIn: 'root'
@@ -31,6 +32,15 @@ export class RestApiService {
         retry(1),
         catchError(RestApiService.handleError),
         map(result => new CurrentWeather(result))
+      )
+  }
+
+  updateProperties(properties : Properties) : Observable<Properties> {
+    return this.http
+      .put<Properties>("rest/properties/update", properties)
+      .pipe(
+        retry(1),
+        catchError(RestApiService.handleError)
       )
   }
 

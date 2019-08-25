@@ -1,0 +1,11 @@
+<div>
+  <form [formGroup]="propertiesUpdate">
+    <mat-form-field>
+      <input matInput placeholder="Cityname" formControlName="city" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Interval" formControlName="interval" type="number" />
+    </mat-form-field>
+    <button [disabled]="!propertiesUpdate.valid" mat-button color="accent" (click)="submitPropertiesUpdate()">Update</button>
+  </form>
+</div>

@@ -12,6 +12,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {RestApiService} from "../shared/rest-api.service";
 import {MockRestApiService} from "../shared/app.testdata";
 import {UpdaterComponent} from "../updater/updater.component";
+import {PropertiesComponent} from "../properties/properties.component";
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -19,7 +20,7 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeComponent, ServerStatusComponent, ManualComponent, AutomaticComponent, CurrentWeatherViewComponent, UpdaterComponent ],
+      declarations: [ HomeComponent, ServerStatusComponent, ManualComponent, AutomaticComponent, CurrentWeatherViewComponent, UpdaterComponent, PropertiesComponent ],
       imports: [AngularMaterialModule, MatTabsModule, ReactiveFormsModule, BrowserAnimationsModule],
       providers: [
         {provide: RestApiService, useClass: MockRestApiService}

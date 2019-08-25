@@ -14,6 +14,7 @@ import {MatTabsModule} from "@angular/material";
 import {AutomaticComponent} from './automatic/automatic.component';
 import {CurrentWeatherViewComponent} from './shared/current-weather-view/current-weather-view.component';
 import {UpdaterComponent} from './updater/updater.component';
+import {PropertiesComponent} from './properties/properties.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {UpdaterComponent} from './updater/updater.component';
     ManualComponent,
     AutomaticComponent,
     CurrentWeatherViewComponent,
-    UpdaterComponent
+    UpdaterComponent,
+    PropertiesComponent
   ],
   imports: [
     BrowserModule,
