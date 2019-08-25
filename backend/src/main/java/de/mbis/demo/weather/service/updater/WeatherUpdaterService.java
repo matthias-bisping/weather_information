@@ -3,6 +3,7 @@ package de.mbis.demo.weather.service.updater;
 import org.quartz.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -12,6 +13,11 @@ import static org.quartz.SimpleScheduleBuilder.simpleSchedule;
 @Service
 public class WeatherUpdaterService {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
+    @Value("${updater.default.city}")
+    private String defaultCity;
+    @Value("${updater.default.interval}")
+    private int defaultInterval;
 
     private Scheduler scheduler;
     private JobDetail currentJob;
@@ -23,7 +29,7 @@ public class WeatherUpdaterService {
     @PostConstruct
     public void init() throws SchedulerException {
         logger.info("Set updater to default values");
-        update("Berlin", 60);
+        update(defaultCity, defaultInterval);
     }
 
     public void update(String city, int interval) throws SchedulerException {
