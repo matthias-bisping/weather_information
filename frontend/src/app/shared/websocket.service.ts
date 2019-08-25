@@ -16,7 +16,7 @@ export class WebsocketService {
   constructor() { }
 
   init() {
-    let ws = new SockJS("/websocket");
+    let ws = new SockJS("/weather/websocket");
     this.stompClient =Stomp.over(ws);
 
     let instance = this;
