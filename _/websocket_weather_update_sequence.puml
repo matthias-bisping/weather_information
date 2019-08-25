@@ -1,0 +1,4 @@
+@startuml
+WeatherUpdaterService -> WeatherUpdaterJob: create
+WeatherUpdaterJob -> OpenWeatherProvider
+@enduml

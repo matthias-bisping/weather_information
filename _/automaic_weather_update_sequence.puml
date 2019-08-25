@@ -1,0 +1,14 @@
+@startuml
+
+actor User
+
+User ->> AutomaticComponent: start update
+AutomaticComponent ->> Timer: create timer
+Timer ->> RestApi: call service
+RestApi -> WeatherController: request via REST
+WeatherController -> OpenWeatherProvider: request CurrentWeather
+OpenWeatherProvider --> WeatherController
+WeatherController --> RestApi
+RestApi ->> Timer
+Timer ->> AutomaticComponent: display result
+@enduml

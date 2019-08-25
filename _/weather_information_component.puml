@@ -1,10 +1,6 @@
 @startuml
 skinparam componentStyle uml
 
-header
-bla
-end header
-
 footer
 Weather Information Components Diagram by Matthias Bisping
 end footer
@@ -42,9 +38,9 @@ WeatherUpdaterJob -> WeatherUpdateRepository : Update
 Shell - WeatherUpdaterService : Update city and interval
 }
 
-REST . ServerStatusController
-REST . WeatherController
-WEBSOCKET . WeaterUpdaterController
+Internet . ServerStatusController
+Internet . WeatherController
+Internet . WeaterUpdaterController
 
 frame "Frontend" {
     package "Service" {
@@ -66,7 +62,7 @@ frame "Frontend" {
 [UpdateComponent] --> [websocket] : subscribe
 [websocket] --> [UpdateComponent] : update
 
-[rest-api] . REST
-WEBSOCKET . [websocket]
+[rest-api] . Internet
+Internet . [websocket]
 
 @enduml
