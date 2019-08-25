@@ -35,3 +35,4 @@ build/
 /backend/spring-shell.log
 /backend/logs/archived/spring-boot-logger-2019-08-23.0.log
 /backend/logs/archived/spring-boot-logger-2019-08-24.0.log
+/backend/logs/spring-boot-logger.log
